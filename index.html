@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdullah - Software Engineer Portfolio</title>
+
+  <!-- Font -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <header class="navbar">
+    <div class="logo">Abdullah</div>
+    <nav class="nav-menu">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="menu-btn">Menu ☰</div>
+  </header>
+
+  <!-- HERO -->
+
+  <section class="hero">
+    <div class="overlay"></div>
+
+
+<div class="hero-content">
+  <div class="left">
+    <p class="tagline">.</p>
+    <h1>
+      Building<br>
+      Software<br>
+      That Matters
+    </h1>
+  </div>
+
+  <div class="right">
+    <p>
+      I develop robust web applications, mobile solutions, and scalable systems that help businesses grow and users succeed. From concept to deployment, I bring ideas to life through clean, efficient code.
+    </p>
+    <button>Get in Touch</button>
+  </div>
+</div>
+
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-bottom: 60px; align-items: start;">
+    <div>
+      <p>
+        Hi, I'm Abdullah, a passionate software engineer specializing in full-stack development and scalable solutions. With years of experience building applications for startups and enterprises, I focus on creating efficient, user-centric software that drives business success.
+      </p>
+      <p>
+        My approach combines technical expertise with problem-solving skills to deliver high-quality code and innovative solutions.
+      </p>
+    </div>
+
+    <div>
+      <p style="color: #999; font-size: 15px; line-height: 1.8;">
+        I've developed over 50+ applications, from MVPs to enterprise systems. My expertise spans modern technologies and best practices, ensuring scalable, maintainable code that grows with your business.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+  </section>
+
+  <!-- PROJECTS -->
+
+  <section id="projects" class="section section-gray">
+    <div class="container">
+      <h2>Featured Projects</h2>
+
+  <div class="projects-grid" id="projectsGrid">
+
+    <!-- PROJECT 1 -->
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?q=80&w=1200&auto=format&fit=crop" alt="E-commerce UI">
+      <div class="project-content">
+        <h3>E-commerce Platform</h3>
+        <p>Full-stack app with authentication, cart, and payments.</p>
+        <div class="tech">React • Node.js • MongoDB</div>
+
+        <div class="actions">
+          <a href="#">Code</a>
+          <button onclick="openModal('videos/demo1.mp4')">Demo</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop" alt="Analytics Dashboard">
+      <div class="project-content">
+        <h3>Task Manager</h3>
+        <p>Real-time productivity app with sync features.</p>
+        <div class="tech">React Native • Firebase</div>
+
+        <div class="actions">
+          <a href="#">Code</a>
+          <button onclick="openModal('videos/demo2.mp4')">Demo</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-card extra hidden">
+      <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop" alt="Developer Dashboard">
+      <div class="project-content">
+        <h3>Analytics Dashboard</h3>
+        <p>Data visualization dashboard with charts and filters.</p>
+        <div class="tech">Next.js • Chart.js</div>
+
+        <div class="actions">
+          <a href="#">Code</a>
+          <button onclick="openModal('videos/demo3.mp4')">Demo</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 4 -->
+    <div class="project-card extra hidden">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop" alt="API Backend">
+      <div class="project-content">
+        <h3>API Service</h3>
+        <p>REST API with authentication and rate limiting.</p>
+        <div class="tech">Node • Express • JWT</div>
+
+        <div class="actions">
+          <a href="#">Code</a>
+          <button onclick="openModal('videos/demo4.mp4')">Demo</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- TOGGLE -->
+  <div class="toggle-btn">
+    <button onclick="toggleProjects()" id="toggleBtn">Show More</button>
+  </div>
+</div>
+
+
+  </section>
+
+  <!-- VIDEO MODAL -->
+<!-- 
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">×</span>
+      <video id="demoVideo" controls></video>
+    </div>
+  </div> -->
+
+  <!-- SKILLS --><section id="skills" class="section">
+  <div class="container">
+
+
+<div class="skills-header">
+  <h2>Skills & Expertise</h2>
+  <p class="skills-subtext">
+    Technologies and disciplines I use to design, build, and scale modern applications.
+  </p>
+</div>
+
+<div class="skills-intro">
+  <div class="skills-intro-text">
+    <h3>What I Bring To The Table</h3>
+    <p>
+      I design systems that are scalable, maintainable, and performant—combining strong engineering fundamentals with modern tools.
+    </p>
+  </div>
+
+  <div class="testimonial-box">
+    <p>
+      “Abdullah delivered a robust solution that exceeded expectations.”
+    </p>
+    <span class="author">— CTO, TechCorp</span>
+  </div>
+</div>
+
+<div class="skills-grid">
+
+  <div class="skill-item">
+    <h3>JavaScript / TypeScript</h3>
+    <p>Modern frontend and backend development using React, Node.js, and scalable architectures.</p>
+  </div>
+
+  <div class="skill-item">
+    <h3>Python</h3>
+    <p>Backend services, automation, and APIs using Django, Flask, and FastAPI.</p>
+  </div>
+
+  <div class="skill-item">
+    <h3>Cloud & DevOps</h3>
+    <p>AWS, Docker, CI/CD pipelines, and production-grade deployments.</p>
+  </div>
+
+  <div class="skill-item">
+    <h3>Databases</h3>
+    <p>Designing efficient data models with PostgreSQL, MongoDB, and Redis.</p>
+  </div>
+
+  <div class="skill-item">
+    <h3>Mobile Development</h3>
+    <p>Cross-platform apps using React Native with performance-focused UX.</p>
+  </div>
+
+  <div class="skill-item">
+    <h3>System Architecture</h3>
+    <p>Microservices, APIs, and scalable distributed systems design.</p>
+  </div>
+
+</div>
+
+
+  </div>
+</section>
+
+
+
+  </section>
+
+  <!-- CONTACT --><section id="contact" class="section section-gray">
+  <div class="container">
+    <h2>Let's Work Together</h2>
+
+<div class="contact-layout">
+
+  <!-- LEFT SIDE -->
+  <div class="contact-text">
+    <p>
+      Ready to build something impactful together. Share your idea and I’ll get back to you within 24–48 hours.
+    </p>
+  </div>
+
+  <!-- RIGHT SIDE (FORM) -->
+  <form class="contact-form">
+
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input id="name" type="text" placeholder="Your name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="you@example.com" required>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Tell me about your project"></textarea>
+    </div>
+
+    <button type="submit">Send Message</button>
+
+  </form>
+
+</div>
+
+  </div>
+</section>
+
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Abdullah</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleProjects() {
+      const hidden = document.querySelectorAll('.extra');
+      const btn = document.getElementById('toggleBtn');
+
+      hidden.forEach(el => el.classList.toggle('hidden'));
+      btn.textContent = btn.textContent === "Show More" ? "Show Less" : "Show More";
+    }
+
+    function openModal(videoSrc) {
+      const modal = document.getElementById('videoModal');
+      const video = document.getElementById('demoVideo');
+
+      video.src = videoSrc;
+      modal.style.display = 'flex';
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('videoModal');
+      const video = document.getElementById('demoVideo');
+
+      video.pause();
+      video.src = "";
+      modal.style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
